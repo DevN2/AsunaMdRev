@@ -13,7 +13,7 @@ module.exports = {
 	  const [ result ] = await conn.onWhatsApp(nomer)
 	  if(!result) return reply("Nomor salah, mohon ulangi dengan nomor yang benar")
 	  pengirim !== undefined? pengirim:"Rahasia"
-	  const txt = stripIndents`[ Pesan Rahasia ]
+	  const txt = `[ Pesan Rahasia ]
 	  
 	  Pengirim: ${pengirim}
 	  Pesan: ${pesan}
