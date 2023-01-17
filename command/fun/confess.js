@@ -20,7 +20,7 @@ module.exports = {
 	  
 	  Pada: ${moment().format('HH-mm-ss')} WIB
 	  Untuk membalas Reply pesan ini dan ketik pesannya`
-	  conn.sendMessage(nomer + "@s.whatsapp.net", {text: txt, mentions: [sender]})
+	  conn.sendMessage(nomer + "@s.whatsapp.net", {text: txt, mentions: [msg.from]})
 	  conn.sendMessage(msg.from, {text: "Pesan berhasil dikirim kepada @" + nomer, withTag: true})
 	}
 }
