@@ -6,12 +6,13 @@ module.exports = {
 	query: "Usage : !halah aku ganteng",
 	isSpam: true,
 	async run({ msg, conn }, { arg, args, q}) {
-        teks = teks.replace(/[e]/g,"a")
-        teks = teks.replace(/[o]/g,"a")
-        teks = teks.replace(/[u]/g,"a")
-        teks = teks.replace(/[E]/g,"A")
-        teks = teks.replace(/[O]/g,"A")
-        teks = teks.replace(/[U]/g,"A")
+        const isi = args[1]
+        teks = isi.replace(/[e]/g,"a")
+        teks = isi.replace(/[o]/g,"a")
+        teks = isi.replace(/[u]/g,"a")
+        teks = isi.replace(/[E]/g,"A")
+        teks = isi.replace(/[O]/g,"A")
+        teks = isi.replace(/[U]/g,"A")
 	  conn.sendMessage(msg.from, {text: teks})
 	}
 }
